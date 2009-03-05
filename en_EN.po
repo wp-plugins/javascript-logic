@@ -1,0 +1,176 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: JavaScript Logic WordPress Plugin\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2009-01-25 10:10+0900\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Justin Tadlock <justin@justintadlock.com>\n"
+"Language-Team:  <justin@justintadlock.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: English\n"
+"X-Poedit-Country: UNITED STATES\n"
+"X-Poedit-KeywordsList: _e;__\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: javascript-logic.php:51
+#: meta-box.php:18
+#: meta-box.php:19
+#: settings-admin.php:12
+msgid "JavaScript Logic Settings"
+msgstr ""
+
+#: javascript-logic.php:51
+#: settings-admin.php:11
+msgid "JavaScript Logic"
+msgstr ""
+
+#: meta-box.php:35
+#: meta-box.php:76
+msgid "WP JavaScript:"
+msgstr ""
+
+#: meta-box.php:44
+#: meta-box.php:85
+msgid "JS Logic Script:"
+msgstr ""
+
+#: meta-box.php:53
+#: meta-box.php:94
+msgid "JavaScript URL:"
+msgstr ""
+
+#: settings-admin.php:55
+msgid "Settings saved."
+msgstr ""
+
+#: settings-admin.php:73
+msgid "Save Changes"
+msgstr ""
+
+#: settings.php:3
+msgid "About This Plugin"
+msgstr ""
+
+#: settings.php:9
+msgid "Plugin Description:"
+msgstr ""
+
+#: settings.php:13
+msgid "Plugin Version:"
+msgstr ""
+
+#: settings.php:17
+msgid "Plugin Documentation:"
+msgstr ""
+
+#: settings.php:18
+msgid "Read the <code>readme.html</code> file included with the plugin to see how this plugin works."
+msgstr ""
+
+#: settings.php:21
+msgid "Plugin Support:"
+msgstr ""
+
+#: settings.php:22
+msgid "Get support for this plugin"
+msgstr ""
+
+#: settings.php:22
+msgid "Visit the support forums."
+msgstr ""
+
+#: settings.php:31
+msgid "JavaScript Set 1"
+msgstr ""
+
+#: settings.php:39
+#: settings.php:99
+#: settings.php:158
+#: settings.php:217
+#: settings.php:276
+#: settings.php:335
+#: settings.php:394
+#: settings.php:453
+#: settings.php:512
+#: settings.php:571
+msgid "Select WordPress Script:"
+msgstr ""
+
+#: settings.php:54
+#: settings.php:114
+#: settings.php:173
+#: settings.php:232
+#: settings.php:291
+#: settings.php:350
+#: settings.php:409
+#: settings.php:468
+#: settings.php:527
+#: settings.php:586
+msgid "Select Plugin Script:"
+msgstr ""
+
+#: settings.php:69
+#: settings.php:129
+#: settings.php:188
+#: settings.php:247
+#: settings.php:306
+#: settings.php:365
+#: settings.php:424
+#: settings.php:483
+#: settings.php:542
+#: settings.php:601
+msgid "Custom File URL:"
+msgstr ""
+
+#: settings.php:78
+#: settings.php:138
+#: settings.php:197
+#: settings.php:256
+#: settings.php:315
+#: settings.php:374
+#: settings.php:433
+#: settings.php:492
+#: settings.php:551
+#: settings.php:610
+msgid "Script Logic:"
+msgstr ""
+
+#: settings.php:91
+msgid "JavaScript Set 2"
+msgstr ""
+
+#: settings.php:150
+msgid "JavaScript Set 3"
+msgstr ""
+
+#: settings.php:209
+msgid "JavaScript Set 4"
+msgstr ""
+
+#: settings.php:268
+msgid "JavaScript Set 5"
+msgstr ""
+
+#: settings.php:327
+msgid "JavaScript Set 6"
+msgstr ""
+
+#: settings.php:386
+msgid "JavaScript Set 7"
+msgstr ""
+
+#: settings.php:445
+msgid "JavaScript Set 8"
+msgstr ""
+
+#: settings.php:504
+msgid "JavaScript Set 9"
+msgstr ""
+
+#: settings.php:563
+msgid "JavaScript Set 10"
+msgstr ""
+

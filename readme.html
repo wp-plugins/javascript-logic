@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+<title>A guide to the JavaScript Logic plugin</title>
+
+<link rel="stylesheet" href="readme.css" type="text/css" media="screen" />
+
+</head>
+<body>
+
+<h1 title="A guide to using the JavaScript Logic plugin">A guide to JavaScript Logic</h1>
+
+<p><em>JavaScript Logic</em> is a plugin that allows you to add JavaScript however you want.  There's no need to add a script on all of your blog's pages when you only need it on a few.</p>
+
+<p>By using WordPress conditional tags or through a meta box on the <em>Write Post/Page</em> screen, you control what files are added to your site and when.</p>
+
+<h2>How to install the plugin</h2>
+
+<ol>
+<li>Uzip the <code>javascript-logic.zip</code> folder.</li>
+<li>Upload the <code>javascript-logic</code> folder to your <code>/wp-content/plugins</code> directory.</li>
+<li>In your WordPress dashboard, head over to the <em>Plugins</em> section.</li>
+<li>Activate <em>JavaScript Logic</em>.</li>
+</ol>
+
+<h2>How to use the plugin</h2>
+
+<p>Once you've activated the plugin, you have two choice of how to add JavaScript:</p>
+
+<ul>
+	<li><a href="#settings" title="JavaScript Logic Settings">JavaScript Logic Settings</a></li>
+	<li><a href="#meta" title="JavaScript Logic Meta Box">Write Post/Page Meta Box</a></li>
+</ul>
+
+<h2 id="settings">JavaScript Logic Settings</h2>
+
+<p>Go to the <em>JavaScript Logic</em> page located under <em>Appearance</em> (maybe <em>Themes</em> or <em>Design</em>, depending on what WP version you're using).  You can have site-wide control over when JavaScript is loaded from this page.</p>
+
+<p>There are 10 <em>JavaScript Sets</em> altogether.  You can add up to three different scripts to each set.  I'll walk you through what each setting means here.</p>
+
+<dl>
+	<dt>Select WordPress Script:</dt>
+	<dd>This section allows you to include a JavaScript file that is packaged with WordPress.  You can use the <a href="http://codex.wordpress.org/Function_Reference/wp_enqueue_script" title="WordPress function: wp_enqueue_script()">wp_enqueue_script()</a> page for reference.</dd>
+	<dt>Select Plugin Script:</dt>
+	<dd>These are scripts that are included within the plugin package.  You can find these in <code>/javascript-loader/js</code>.</dd>
+	<dt>Custom File <acronym title="Uniform Resource Locator">URL</acronym>:</dt>
+	<dd>You can input a <acronym title="Uniform Resource Locator">URL</acronym> to any JavaScript file you have on your site.</dd>
+	<dt>Script Logic:</dt>
+	<dd>Use WordPress <a href="http://codex.wordpress.org/Conditional_Tags" title="WordPress Conditional Tags">conditional tags</a> to tell the script when to load.  <strong>Do not</strong> wrap it with <code>&lt;?php</code> and <code>?&gt;</code> tags.  If nothing is input, your JavaScript will load on every page (see examples below).</dd>
+</dl>
+
+<p>Here's an example of <em>Script Logic</em> that loads a set on the home page.</p>
+
+<pre><code>is_home()</code></pre>
+
+<p>An example of loading scripts on the <em>About</em> page or a post with the <acronym title="Identification">ID</acronym> of <code>205</code>.</p>
+
+<pre><code>is_page('about') || is_single(205)</code></pre>
+
+<p>How about we get a little more complicated?  Let's check for single posts with the tag of <em>Gallery</em>, the category archive <em>WordPress</em>, or all search results pages.</p>
+
+<pre><code>has_tag('gallery') || is_category('wordpress') || is_search()</code></pre>
+
+<p>Okay, that wasn't <em>really</em> complicated.  WordPress <a href="http://codex.wordpress.org/Conditional_Tags" title="WordPress Conditional Tags">conditional tags</a> are actually quite simple to use.</p>
+
+<h2 id="meta">Write Post/Page Meta Box</h2>
+
+<p>This plugin will also provide you with an additional meta box on the <em>Write Post</em> and <em>Page</em> screens.  It's clearly labeled <em>JavaScript Logic Settings</em>.</p>
+
+<p>This will allow you to load JavaScript on a per-post or per-page basis.  It's great because it gives you control right when you're writing a post/page, but it's somewhat limiting because you can't add as many scripts as you can from the plugin settings page.</p>
+
+<p>There are three boxes.  Anything you select or input will be automatically loaded on that particular single post or page view.</p>
+
+<dl>
+	<dt>WP JavaScript:</dt>
+	<dd>This section allows you to include a JavaScript file that is packaged with WordPress.  You can use the <a href="http://codex.wordpress.org/Function_Reference/wp_enqueue_script" title="WordPress function: wp_enqueue_script()">wp_enqueue_script()</a> page for reference.</dd>
+	<dt>JS Logic Script:</dt>
+	<dd>These are scripts that are included within the plugin package.  You can find these in <code>/javascript-loader/js</code>.</dd>
+	<dt>JavaScript <acronym title="Uniform Resource Locator">URL</acronym>:</dt>
+	<dd>You can input a <acronym title="Uniform Resource Locator">URL</acronym> to any JavaScript file you have on your site.</dd>
+</dl>
+
+<h2>Plugin support</h2>
+
+<p>I run a WordPress community called <a href="http://themehybrid.com" title="Theme Hybrid">Theme Hybrid</a>, which is where I fully support all of my WordPress projects, including plugins.  You can sign up for an account to get plugin support for a small yearly fee ($25 <acronym title="United States Dollars">USD</acronym> at the time of writing).</p>
+
+<p>I know.  I know.  You might not want to pay for support, but just consider it a donation to the project.  I am fully employed through my work with WordPress, so to continue making cool, GPL-licensed plugins and having the time to support them, I must pay the bills.</p>
+
+<h2>Copyright &amp; license</h2>
+
+<p><em>JavaScript Logic</em> is licensed under the <a href="http://www.gnu.org/licenses/old-licenses/gpl-2.0.html" title="GNU GPL">GNU General Public License</a>, version 2 (GPL).</p>
+
+<p>This plugin is copyrighted to <a href="http://justintadlock.com" title="Justin Tadlock">Justin Tadlock</a>.</p>
+
+<p>2008 &copy; Justin Tadlock</p>
+
+</body>
+</html>
